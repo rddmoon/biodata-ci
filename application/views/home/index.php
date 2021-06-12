@@ -216,19 +216,23 @@ addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); func
         </div>
 			</div>
 			<div class="contact">
-				<form>
+				<form action="mailto:yaniarpradityas@gmail.com?subject=Email from visitor" method="post" enctype="text/plain">
 					<div class="col-md-4 contactgrid">
-						<input type="text" class="text" value=" name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' name';}">
-					</div>
+						<input type="text" class="text" value="name" name="Name " onfocus="this.value = ' ';" onblur="if (this.value == ' ') {this.value = ' name';}">
+
+          </div>
 					<div class="col-md-4 contactgrid">
-						<input type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
-					</div>
+						<input type="text" class="text" value="email" name="E-mail "onfocus="this.value = ' ';" onblur="if (this.value == ' ') {this.value = ' email';}">
+
+          </div>
 					<div class="col-md-4 contactgrid">
-						<input type="text" class="text" value="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
-					</div>
+						<input type="text" class="text" value="phone" name="Phone " onfocus="this.value = ' ';" onblur="if (this.value == ' ') {this.value = ' phone';}">
+
+          </div>
 					<div class="col-md-8 contactgrid1">
-						<textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
-					</div>
+						<textarea name="Message " onfocus="this.value=' ';" onblur="if(this.value == ' ') {this.value=' message';}" >Your Message</textarea>
+
+          </div>
 					<div class="col-md-4 contactgrid2">
 						<input type="submit" value="[send message]">
 					</div>
@@ -239,7 +243,7 @@ addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); func
 
 					<p>&copy; 2021 yaniarpe . All rights  Reserved</p>
 
-					</div>
+			</div>
 					<script type="text/javascript">
 						$(document).ready(function() {
 							/*
